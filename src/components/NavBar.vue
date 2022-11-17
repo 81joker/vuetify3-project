@@ -12,7 +12,7 @@
 <v-spacer></v-spacer> 
 
 <!-- ST Mennue -->
-<v-menu open-on-click open-on-hover :location="end">
+<v-menu open-on-click open-on-hover>
         <template v-slot:activator="{ props }">
           <v-btn
             color="grey"
@@ -45,15 +45,16 @@ v-model="drawer"
       
 <v-list>
 
-
-
     <!-- Avtar Nav -->
     <v-container >
-   <v-col align="start" class="mt-5">
+   <v-col align="center" class="mt-5">
       <v-avatar size="100">
          <img src="/avatar-1.png" />
       </v-avatar>
-      <v-subheader class="text-white d-flex justify-start">The Vuetify 3</v-subheader>
+      <v-subheader class="text-white d-flex justify-center">The Vuetify 3</v-subheader>
+   </v-col>
+   <v-col class="mt-3 mb-3">
+   <PopupView />
    </v-col>
 </v-container>
         <v-divider></v-divider>
@@ -76,7 +77,9 @@ v-model="drawer"
 </template>
 
 <script>
+import PopupView from './PopupView'
 export default {
+  components:{PopupView},
 data() {
   return {
     drawer: false,
