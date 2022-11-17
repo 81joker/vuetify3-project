@@ -76,8 +76,8 @@ export default {
       projects: [
         {
           title: "Design a new website",
-          person: "The Net Ninja",
-          due: "1st Jan 2019",
+          person: "The Nehad Altimimi",
+          due: "1st Jan 2022",
           status: "ongoing",
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!",
@@ -85,7 +85,7 @@ export default {
         {
           title: "Code up the homepage",
           person: "Chun Li",
-          due: "10th Jan 2019",
+          due: "10th Jan 2021",
           status: "complete",
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!",
@@ -93,7 +93,7 @@ export default {
         {
           title: "Design video thumbnails",
           person: "Ryu",
-          due: "20th Dec 2018",
+          due: "20th Dec 2022",
           status: "complete",
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!",
