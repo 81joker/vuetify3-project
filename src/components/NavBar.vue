@@ -1,8 +1,17 @@
 <template>
     <!-- <v-app> -->
  <nav>
+
+<v-snackbar
+  v-model="snackbar" :timeout="4000"  color="primary" top >
+  Awesome! You addded a new project
+  <v-btn flat color="white"  @click="snackbar = false" >Close</v-btn>
+</v-snackbar>
+
+
+
+
   <v-toolbar  flat app > 
-    <!-- <v-toolbar-side-icon ></v-toolbar-side-icon> -->
     <v-app-bar-nav-icon class="text-grey"  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
 <v-toolbar-title color="text-grey text-uppercase">
@@ -54,7 +63,7 @@ v-model="drawer"
       <v-subheader class="text-white d-flex justify-center">The Vuetify 3</v-subheader>
    </v-col>
    <v-col class="mt-3 mb-3">
-   <PopupView />
+   <PopupView @projectAdedd="snackbar = true"/>
    </v-col>
 </v-container>
         <v-divider></v-divider>
@@ -87,7 +96,8 @@ data() {
       {icon: 'mdi-view-dashboard', text:'Dashboard', route:'/'},
       {icon: 'mdi-folder', text:'My Projects', route:'/projects'},
       {icon: 'mdi-account', text:'Team', route:'/team'},
-    ]
+    ],
+    snackbar:true
   }
 },
 }
