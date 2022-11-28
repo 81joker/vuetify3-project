@@ -69,10 +69,7 @@ export default {
       loading:false,
       inputRules: [(v) => v.length >= 3 || "Minimum length is 3 characters"],
 
-      date: new Date().toISOString().substr(0, 10),
-      menu: false,
-      modal: false,
-      menu2: false,
+
     };
   },
   methods: {

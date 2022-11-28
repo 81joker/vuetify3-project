@@ -3,7 +3,7 @@
  <nav>
 
 <v-snackbar
-  v-model="snackbar" :timeout="4000"  color="primary" top >
+  v-model="snackbar" :timeout="4000"  color="primary" >
   Awesome! You addded a new project
   <v-btn flat color="white"  @click="snackbar = false" >Close</v-btn>
 </v-snackbar>
@@ -104,5 +104,7 @@ data() {
 </script>
 
 <style>
-
+/* .v-overlay__content{
+  top:0 !important;
+} */
 </style>
